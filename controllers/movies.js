@@ -50,7 +50,7 @@ const addMovie = (req, res, next) => {
 
 const deleteMovie = (req, res, next) => {
   const userId = req.user._id;
-  movieModel.findById(req.params._id)
+    movieModel.findById(req.params._id)
     .then((movie) => {
       if (!movie) {
         return next(new NotFoundError('Фильма с таким _id не существует'));
@@ -58,7 +58,7 @@ const deleteMovie = (req, res, next) => {
       if (movie.owner.toString() !== userId) {
         return next(new ForbiddenError('У вас недостаточно прав для удаления этого фильма'));
       }
-      return movieModel.deleteOne().then(() => res.send({ message: 'Фильм успешно удален' }));
+      return movie.deleteOne().then(() => res.send({ message: 'Фильм успешно удален' }));
     }).catch((err) => handleError(err, next));
 };
 
