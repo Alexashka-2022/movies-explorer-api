@@ -14,11 +14,9 @@
 8. dotenv
 9. express-rate-limit
 
-## Адрес проекта на GitHubPages
+## Адрес проекта на GitHub
 https://github.com/Alexashka-2022/movies-explorer-api.git
 
 ## Ссылки на проект
-
-IP 158.160.5.57
 
 Backend https://api.shmakov.diploma.nomoredomains.work
