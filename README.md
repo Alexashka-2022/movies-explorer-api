@@ -20,3 +20,5 @@ https://github.com/Alexashka-2022/movies-explorer-api.git
 ## Ссылки на проект
 
 Backend https://api.shmakov.diploma.nomoredomains.work
+
+**Статус проекта:** проект завершен
